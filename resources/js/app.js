@@ -21,7 +21,8 @@ window.Echo.join('common_room')
         onlineUsers--;
 
         update_online_counter();
-    })
-    listen('NewMessage', (e) => {
-        console.log(e)
+    });
+Echo.channel('common_room')
+    .listen('my-event', (e) => {
+        console.log("alert")
     });

@@ -22,7 +22,4 @@ window.Echo.join('common_room')
 
         update_online_counter();
     });
-Echo.channel('common_room')
-    .listen('my-event', (e) => {
-        console.log("alert")
-    });
+
